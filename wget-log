@@ -1,0 +1,15 @@
+--2020-11-05 02:11:32--  https://www.obdev.at/downloads/vusb/bootloadHID.2012-12-08.tar.gz
+Resolving www.obdev.at (www.obdev.at)... 78.46.114.187
+Connecting to www.obdev.at (www.obdev.at)|78.46.114.187|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://www.obdev.at/ftp/pub/Products/vusb/bootloadHID.2012-12-08.tar.gz [following]
+--2020-11-05 02:11:33--  https://www.obdev.at/ftp/pub/Products/vusb/bootloadHID.2012-12-08.tar.gz
+Reusing existing connection to www.obdev.at:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 107970 (105K) [application/x-gzip]
+Saving to: ‘STDOUT’
+
+-                                           0%[                                                                                      ]       0  --.-KB/s               -                                         100%[=====================================================================================>] 105.44K  --.-KB/s    in 0.1s    
+
+2020-11-05 02:11:33 (979 KB/s) - written to stdout [107970/107970]
+
