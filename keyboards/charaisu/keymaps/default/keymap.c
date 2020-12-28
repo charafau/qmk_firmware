@@ -16,6 +16,9 @@
 #include QMK_KEYBOARD_H
 
 
+#undef ___
+#define ___ KC_TRNS
+
 #define _QWERTY 0
 #define _RAISE 2
 #define _LOWER 3
@@ -34,18 +37,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ___, ___, KC_UP, ___, ___, ___, ___, ___, ___, ___, ___, ___, ___, ___,
         ___, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGUP, ___, ___, ___, ___, ___, ___, ___, ___, ___,
         ___, KC_HOME, ___, KC_END, KC_PGDN, ___, ___, ___, ___, ___, ___, ___, ___,
-        ___, ___, MO(_ADJUST), ___, ___, ___, ___, ___, ___
+        ___, ___, ___, ___, ___, ___, ___, ___, ___
     ),
     [_LOWER] = LAYOUT(
         ___, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, ___,
         ___, ___, ___, ___, ___, ___, KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_MINUS, KC_KP_ASTERISK, ___, ___, ___,
         ___, ___, ___, ___, ___, ___, KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_PLUS, KC_KP_SLASH, ___, ___, ___,
         ___, ___, ___, ___, ___, ___, KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_DOT, ___, ___, ___,
-        ___, ___, ___, ___, KC_KP_0, MO(_ADJUST), ___, ___, ___
+        ___, ___, ___, ___, KC_KP_0, ___, ___, ___, ___
     ),
      [_FN] = LAYOUT(
-        KC_DESKTOP, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NUMLOCK,
-        ___, ___, KC_PGUP, KC_MY_COMPUTER, KC_CALC, KC_WWW_HOME, ___, ___, ___, KC_SNIP, KC_PROJECTOR, ___, ___, ___,
+        ___, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NUMLOCK,
+        ___, ___, KC_PGUP, KC_MY_COMPUTER, KC_CALC, KC_WWW_HOME, ___, ___, ___, ___, ___, ___, ___, ___,
         ___, KC_HOME, KC_PGDN, KC_END, KC_BRID, KC_BRIU, ___, ___, ___, ___, ___, ___, ___, ___,
         ___, KC_VOLD, KC_MUTE, KC_VOLU, KC_MEDIA_PREV_TRACK, KC_MEDIA_NEXT_TRACK, ___, ___, ___, ___, ___, ___, ___,
         ___, ___, ___, KC_MEDIA_PLAY_PAUSE, ___, ___, ___, ___, ___
