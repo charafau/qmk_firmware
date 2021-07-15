@@ -22,9 +22,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x444D
-#define MANUFACTURER    tshort
+#define MANUFACTURER    charafau
 // defined in subfolder
-#define DESCRIPTION     A split keyboard for the cheap makers
+#define DESCRIPTION     Turbo Dactyl
 
 /* mouse config */
 #define MOUSEKEY_INTERVAL       20
